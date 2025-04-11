@@ -1,0 +1,11 @@
+.gradient {
+    background: linear-gradient(90deg, #FFFFFF, #211EED);
+}
+.sizeCard {
+    max-width: 250px;
+    height: 200px;
+}
+.category {
+    max-width: 150px;
+    height: 160px;
+}

@@ -1,6 +1,9 @@
 .gradient {
     background: linear-gradient(90deg, #FFFFFF, #211EED);
 }
+.gradientX {
+    background: linear-gradient(90deg, #211EED, #FFFFFF);
+}
 .sizeCard {
     max-width: 250px;
     height: 200px;
@@ -8,4 +11,17 @@
 .category {
     max-width: 150px;
     height: 160px;
+}
+.sizeCard:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+    cursor: pointer;
+}
+.category:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+    cursor: pointer;
+}
+.size {
+    width: 100%;
 }

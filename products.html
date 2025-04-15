@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucho's e_commerce | Productos</title>
-    <link rel="stylesheet" href="assets/Styles/StyleHome.css">
+    <link rel="stylesheet" href="assets/Styles/StyleProduct.css">
+    <link rel="stylesheet" href="assets/Styles/Style.css">
     <link rel="icon" type="image/x-icon" href="assets/Images/favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous" type="module"></script>
@@ -22,7 +23,7 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="container-fluid">
         <section class="d-flex justify-content-center align-items-center flex-row p-5 categorySection">
             <div class="d-flex flex-column justify-content-center align-items-center category pe-5">
                 <img src="assets/Images/Icon_dog.png" alt="Categoria perro" class="img-fluid" width="150" height="150">
@@ -41,105 +42,85 @@
                 <span class="fw-bold">Peces</span>
             </div>
         </section>
-        <section class="d-flex justify-content-center align-items-center flex-row flex-wrap">
-            <div class="card border border-black p-5 m-5 sizeCard">
-                <div class="cardImg">
-                    <img src="assets/Images/eatBirds1.png" alt="Comida para aves" class="img-fluid mb-4" width="150" height="150">
+        <section class="d-flex flex-row justify-content-center align-items-center flex-wrap py-4" >
+            <div class="d-flex justify-content-center align-items-center cardSize border border-2 border-dark rounded-3 my-1 mx-1" >
+                <div >
+                    <img src="assets/Images/eatBirds1.png" alt="Comida para aves" class="img-fluid my-2 rounded-3 px-2 imgSize"/>
                 </div>
-                <div class="cardDescripcion d-flex flex-column justify-content-center align-items-center">
-                    <span class="mb-3 fw-bold">Cunipic Alimento para Agaporni, 3 kg</span>
-                    <span class="mb-3 fst-italic">$250.00</span>
-                    <button class="btn btn-outline-primary">Añadir al carrito</button>
-                </div>
-            </div>
-            <div class="card border border-black p-5 m-5 sizeCard">
-                <div class="cardImg">
-                    <img src="assets/Images/eatBirds2.png" alt="Comida para aves" class="img-fluid mb-4" width="150" height="150">
-                </div>
-                <div class="cardDescripcion d-flex flex-column justify-content-center align-items-center">
-                    <span class="mb-3 fw-bold">Alimento para Loros, 1 kg</span>
-                    <span class="mb-3 fst-italic">$150.00</span>
-                    <button class="btn btn-outline-primary">Añadir al carrito</button>
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                    <span class="py-1" >CUNIPIC Alimento para Agaporni, 3 kg</span>
+                    <span class="py-2" >$250.00</span>
+                    <button  class="btn btn-outline-primary w-150">Añadir al carrito</button>
                 </div>
             </div>
-            <div class="card border border-black p-5 m-5 sizeCard">
-                <div class="cardImg">
-                    <img src="assets/Images/eatCat1.png" alt="Comida para aves" class="img-fluid mb-4" width="150" height="150">
+            <div class="d-flex justify-content-center align-items-center cardSize border border-2 border-dark rounded-3 my-1 mx-1" >
+                <div >
+                    <img src="assets/Images/eatBirds1.png" alt="Comida para aves" class="img-fluid my-2 rounded-3 px-2 imgSize"/>
                 </div>
-                <div class="cardDescripcion d-flex flex-column justify-content-center align-items-center">
-                    <span class="mb-3 fw-bold">Cunipic Alimento para Agaporni, 3 kg</span>
-                    <span class="mb-3 fst-italic">$250.00</span>
-                    <button class="btn btn-outline-primary">Añadir al carrito</button>
-                </div>
-            </div>
-            <div class="card border border-black p-5 m-5 sizeCard">
-                <div class="cardImg">
-                    <img src="assets/Images/eatCat2.png" alt="Comida para aves" class="img-fluid mb-4" width="150" height="150">
-                </div>
-                <div class="cardDescripcion d-flex flex-column justify-content-center align-items-center">
-                    <span class="mb-3 fw-bold">Cunipic Alimento para Agaporni, 3 kg</span>
-                    <span class="mb-3 fst-italic">$250.00</span>
-                    <button class="btn btn-outline-primary">Añadir al carrito</button>
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                    <span class="py-1" >CUNIPIC Alimento para Agaporni, 3 kg</span>
+                    <span class="py-2" >$250.00</span>
+                    <button  class="btn btn-outline-primary w-150">Añadir al carrito</button>
                 </div>
             </div>
-            <div class="card border border-black p-5 m-5 sizeCard">
-                <div class="cardImg">
-                    <img src="assets/Images/eatCat3.png" alt="Comida para aves" class="img-fluid mb-4" width="150" height="150">
+            <div class="d-flex justify-content-center align-items-center cardSize border border-2 border-dark rounded-3 my-1 mx-1" >
+                <div >
+                    <img src="assets/Images/eatBirds1.png" alt="Comida para aves" class="img-fluid my-2 rounded-3 px-2 imgSize"/>
                 </div>
-                <div class="cardDescripcion d-flex flex-column justify-content-center align-items-center">
-                    <span class="mb-3 fw-bold">Cunipic Alimento para Agaporni, 3 kg</span>
-                    <span class="mb-3 fst-italic">$250.00</span>
-                    <button class="btn btn-outline-primary">Añadir al carrito</button>
-                </div>
-            </div>
-            <div class="card border border-black p-5 m-5 sizeCard">
-                <div class="cardImg">
-                    <img src="assets/Images/eatDog1.png" alt="Comida para aves" class="img-fluid mb-4" width="150" height="150">
-                </div>
-                <div class="cardDescripcion d-flex flex-column justify-content-center align-items-center">
-                    <span class="mb-3 fw-bold">Cunipic Alimento para Agaporni, 3 kg</span>
-                    <span class="mb-3 fst-italic">$250.00</span>
-                    <button class="btn btn-outline-primary">Añadir al carrito</button>
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                    <span class="py-1" >CUNIPIC Alimento para Agaporni, 3 kg</span>
+                    <span class="py-2" >$250.00</span>
+                    <button  class="btn btn-outline-primary w-150">Añadir al carrito</button>
                 </div>
             </div>
-            <div class="card border border-black p-5 m-5 sizeCard">
-                <div class="cardImg">
-                    <img src="assets/Images/eatDog2.png" alt="Comida para aves" class="img-fluid mb-4" width="150" height="150">
+            <div class="d-flex justify-content-center align-items-center cardSize border border-2 border-dark rounded-3 my-1 mx-1" >
+                <div >
+                    <img src="assets/Images/eatBirds1.png" alt="Comida para aves" class="img-fluid my-2 rounded-3 px-2 imgSize"/>
                 </div>
-                <div class="cardDescripcion d-flex flex-column justify-content-center align-items-center">
-                    <span class="mb-3 fw-bold">Cunipic Alimento para Agaporni, 3 kg</span>
-                    <span class="mb-3 fst-italic">$250.00</span>
-                    <button class="btn btn-outline-primary">Añadir al carrito</button>
-                </div>
-            </div>
-            <div class="card border border-black p-5 m-5 sizeCard">
-                <div class="cardImg">
-                    <img src="assets/Images/eatDog3.png" alt="Comida para aves" class="img-fluid mb-4" width="150" height="150">
-                </div>
-                <div class="cardDescripcion d-flex flex-column justify-content-center align-items-center">
-                    <span class="mb-3 fw-bold">Cunipic Alimento para Agaporni, 3 kg</span>
-                    <span class="mb-3 fst-italic">$250.00</span>
-                    <button class="btn btn-outline-primary">Añadir al carrito</button>
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                    <span class="py-1" >CUNIPIC Alimento para Agaporni, 3 kg</span>
+                    <span class="py-2" >$250.00</span>
+                    <button  class="btn btn-outline-primary w-150">Añadir al carrito</button>
                 </div>
             </div>
-            <div class="card border border-black p-5 m-5 sizeCard">
-                <div class="cardImg">
-                    <img src="assets/Images/eatFish1.png" alt="Comida para aves" class="img-fluid mb-4" width="150" height="150">
+            <div class="d-flex justify-content-center align-items-center cardSize border border-2 border-dark rounded-3 my-1 mx-1" >
+                <div >
+                    <img src="assets/Images/eatBirds1.png" alt="Comida para aves" class="img-fluid my-2 rounded-3 px-2 imgSize"/>
                 </div>
-                <div class="cardDescripcion d-flex flex-column justify-content-center align-items-center">
-                    <span class="mb-3 fw-bold">Cunipic Alimento para Agaporni, 3 kg</span>
-                    <span class="mb-3 fst-italic">$250.00</span>
-                    <button class="btn btn-outline-primary">Añadir al carrito</button>
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                    <span class="py-1" >CUNIPIC Alimento para Agaporni, 3 kg</span>
+                    <span class="py-2" >$250.00</span>
+                    <button  class="btn btn-outline-primary w-150">Añadir al carrito</button>
                 </div>
             </div>
-            <div class="card border border-black p-5 m-5 sizeCard">
-                <div class="cardImg">
-                    <img src="assets/Images/eatFish2.png" alt="Comida para aves" class="img-fluid mb-4" width="150" height="150">
+            <div class="d-flex justify-content-center align-items-center cardSize border border-2 border-dark rounded-3 my-1 mx-1" >
+                <div >
+                    <img src="assets/Images/eatBirds1.png" alt="Comida para aves" class="img-fluid my-2 rounded-3 px-2 imgSize"/>
                 </div>
-                <div class="cardDescripcion d-flex flex-column justify-content-center align-items-center">
-                    <span class="mb-3 fw-bold">Cunipic Alimento para Agaporni, 3 kg</span>
-                    <span class="mb-3 fst-italic">$250.00</span>
-                    <button class="btn btn-outline-primary">Añadir al carrito</button>
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                    <span class="py-1" >Cunipic Alimento para Agaporni, 3 kg</span>
+                    <span class="py-2" >$250.00</span>
+                    <button  class="btn btn-outline-primary w-150">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center cardSize border border-2 border-dark rounded-3 my-1 mx-1" >
+                <div >
+                    <img src="assets/Images/eatBirds1.png" alt="Comida para aves" class="img-fluid my-2 rounded-3 px-2 imgSize"/>
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                    <span class="py-1" >CUNIPIC Alimento para Agaporni, 3 kg</span>
+                    <span class="py-2" >$250.00</span>
+                    <button  class="btn btn-outline-primary w-150">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center cardSize border border-2 border-dark rounded-3 my-1 mx-1" >
+                <div >
+                    <img src="assets/Images/eatBirds1.png" alt="Comida para aves" class="img-fluid my-2 rounded-3 px-2 imgSize"/>
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                    <span class="py-1" >CUNIPIC Alimento para Agaporni, 3 kg</span>
+                    <span class="py-2" >$250.00</span>
+                    <button  class="btn btn-outline-primary w-150">Añadir al carrito</button>
                 </div>
             </div>
         </section>

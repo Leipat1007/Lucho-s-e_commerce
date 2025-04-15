@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucho's e_commerce | Carrito</title>
-    <link rel="stylesheet" href="assets/Styles/StyleHome.css">
+    <link rel="stylesheet" href="assets/Styles/styleCart.css">
+    <link rel="stylesheet" href="assets/Styles/Style.css">
     <link rel="icon" type="image/x-icon" href="assets/Images/favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous" type="module"></script>
@@ -22,45 +23,48 @@
             </ul>
         </nav>
     </header>
-    <main class="d-flex justify-content-between align-items-center flex-row container">
-        <section class="col-6 d-flex justify-content-left align-items-left flex-column">
-            <div class="d-flex justify-content-left align-items-left flex-column p-5 fw-bold fs-4  flex-wrap">
-                <span>Tu carrito de compras</span>
-                <span>Número de pedido: XXXXX</span>
-            </div>
-            <div class="d-flex justify-content-center align-items-center flex-row p-5">
-                <section>
-                    <span>Productos en tu carrito</span>
-                    <div class="border border-black mt-2 mb-2 d-flex justify-content-between align-items-center px-5">
-                        <img src="assets/Images/eatBirds2.png" alt="Comida para aves" width="100px" height="auto">
-                        <div class="d-flex flex-column justify-content-left align-items-left">
-                            <span class="mb-2 fw-bold">Versele-Laga Prestige Alimento de Semillas
-                                para Loros, 1 kg</span>
-                            <span class="mb-2">SKU: XXXXX</span>
-                            <span>PRECIO: $455.00</span>
-                        </div>
-                        <div>
-                            <span>Cantidad</span>
-                            <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="1" value="1" min="1" max="10"> 
+    <main>
+        <div class="d-flex justify-content-left align-items-left flex-column p-5 fw-bold fs-4  flex-wrap">
+            <span>Tu carrito de compras</span>
+            <span>Número de pedido: XXXXX</span>
+        </div>
+        <div class="d-flex justify-content-between align-items-center flex-row px-4 py-4">
+            <section class="sectionSize border border-black rounded-3 px-2">
+                <span class="fw-bold">Productos en tu carrito</span>
+                <div class="card my-2 border border-secondary d-flex justify-content-between align-items-center flex-row px-5 rounded-3 cardSize m-3">
+                    <div>
+                        <img src="assets/Images/eatBirds1.png" alt="Comida para aves" class="imgSize">
+                    </div>
+                    <div class="d-flex flex-column justify-content-left align-items-left">
+                        <span class="fw-bold">Prestige Alimento de Semillas para Loros, 1 kg</span>
+                        <article class="d-flex flex-row justify-content-between align-items-left px-2 py-5">
+                            <span>SKU: XXXXX</span>
+                            <span class="fst-italic">PRECIO: $455.00</span>
+                        </article>
+                        <div class="d-flex justify-content-between align-items-center flex-row mt-2 mb-2">
+                            <span>Cantidad: </span>
+                            <input type="number" class="form-control btn btn-success w-50" id="exampleFormControlInput1" placeholder="1" value="1" min="1" max="10">
                         </div>
                     </div>
-                </section>
-        </section>
-            <section class="col-4 border border-black d-flex justify-content-center align-items-center flex-column pb-5">
+                </div>
+            </section>
+            <section class="sectionSizeFactura d-flex justify-content-center align-items-center flex-column pb-5 border border-black rounded-3">
                 <div class="size pb-5 align-items-end justify-content-end d-flex">
                     <a href="./products.html" class="text-decoration-none btn btn-link justify-content-end fw-bold">Continuar comprando</a>
                 </div>
-                <span>Resumen de tu pedido</span>
-                <div class="d-flex justify-content-between align-items-center flex-row mt-2 mb-2 container px-5">
-                    <span>Subtotal: </span>
-                    <span> $455.00 </span>
+                <span class="fw-bold text-secondary">Resumen de tu pedido</span>
+                <div>
+                    <article class="d-flex justify-content-between align-items-center flex-row my-5 px-5 sectionSizeFactura">
+                        <span class="fw-bold">Subtotal: </span>
+                        <span class="fst-italic"> $455.00 </span>
+                    </article>
+                    <article class="d-flex justify-content-between align-items-center flex-row mb-5 px-5 sectionSizeFactura">
+                        <span class="fw-bold">Total: </span>
+                        <span class="fst-italic"> $455.00 </span>
+                    </article>
                 </div>
-                <div class="d-flex justify-content-between align-items-center flex-row mt-2 mb-2 container px-5">
-                    <span>Total: </span>
-                    <span> $455.00 </span>
-                </div>
-                <span class="text-secondary mb-4">Los precios incluyen IVA</span>
-                <button class="btn btn-primary ">Comprar ahora</button>
+                <span class="fw-bold text-secondary fst-italic">Los precios incluyen IVA</span>
+                <button class="my-5 btn btn-primary">Comprar ahora</button>
             </section>
         </div>
     </main>

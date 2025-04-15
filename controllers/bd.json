@@ -1,3 +1,94 @@
 {
-    
+    "Productos":[
+        {
+            "id": 1,
+            "nombre": "Cunipic Alimento para Agaporni, 3 kg",
+            "precio": 255.00,
+            "descripcion": "Alimento completo para Agaporni, con un 20% de semillas y un 80% de grano.",
+            "image": "../assets/Images/eatBirds1.png",
+            "categoria": "Aves",
+            "stock": 10
+        },
+        {
+            "id": 2,
+            "nombre": "Cunipic Alimento para Canarios, 1 kg",
+            "precio": 150.00,
+            "descripcion": "Alimento completo para Canarios, con un 30% de semillas y un 70% de grano.",
+            "image": "../assets/Images/eatBirds2.png",
+            "categoria": "Aves",
+            "stock": 5
+        },
+        {
+            "id": 3,
+            "nombre":"Agility Pequeños Cachorros, 1 kg",
+            "precio": 200.00,
+            "descripcion": "Alimento completo para cachorros de razas pequeñas, con un 25% de carne y un 75% de grano.",
+            "image": "../assets/Images/eatDog1.png",
+            "categoria": "Perros",
+            "stock": 8
+        },
+        {
+            "id": 4,
+            "nombre":"Agility Gold Grandes Cachorros, 2 kg",
+            "precio": 350.00,
+            "descripcion": "Alimento completo para perros adultos, con un 30% de carne y un 70% de grano.",
+            "image": "../assets/Images/eatDog2.png",
+            "categoria": "Perros",
+            "stock": 12
+        },
+        {
+            "id": 5,
+            "nombre":"Hills F Adult Light, 2kg",
+            "precio": 300.00,
+            "descripcion": "Alimento completo para gatos adultos, con un 35% de carne y un 65% de grano.",
+            "image": "../assets/Images/eatCat1.png",
+            "categoria": "Gatos",
+            "stock": 7
+        },
+        {
+            "id": 6,
+            "nombre":"Hills C Adulto Small Paws L&R, 1kg",
+            "precio": 250.00,
+            "descripcion": "Alimento completo para perros cachorros, con un 40% de carne y un 60% de grano.",
+            "image": "../assets/Images/eatDog3.png",
+            "categoria": "Perros",
+            "stock": 9
+        },
+        {
+            "id": 7,
+            "nombre":"Purina Pro Plan Alimento para Gatos Adultos, 2 kg",
+            "precio": 400.00,
+            "descripcion": "Alimento completo para gatos adultos, con un 40% de carne y un 60% de grano.",
+            "image": "../assets/Images/eatCat2.png",
+            "categoria": "Gatos",
+            "stock": 6
+        },
+        {
+            "id": 8,
+            "nombre":"Alimento Húmedo Para Gato Royal Canin Fhn Spayed Neuter - 85 Gr",
+            "precio": 200.00,
+            "descripcion": "Alimento completo para gatos adultos, con un 40% de carne y un 60% de grano.",
+            "image": "../assets/Images/eatCat3.png",
+            "categoria": "Gatos",
+            "stock": 4
+        },
+        {
+            "id": 9,
+            "nombre": "Tetra Color Alimento en Hojuelas para Peces Tropicales, 200 g",
+            "precio": 180.00,
+            "descripcion": "Alimento completo para peces tropicales, con un 20% de proteínas y un 80% de hojuelas.",
+            "image": "../assets/Images/eatFish1.png",
+            "categoria": "Peces",
+            "stock": 15
+        },
+        {
+            "id": 10,
+            "nombre": "Tetra Pond Mezcla Comida para Peces, 598 gr",
+            "precio": 150.00,
+            "descripcion": "Alimento completo para peces de agua fría, con un 25% de proteínas y un 75% de hojuelas.",
+            "image": "../assets/Images/eatFish2.png",
+            "categoria": "Peces",
+            "stock": 20
+        }
+    ]
 }

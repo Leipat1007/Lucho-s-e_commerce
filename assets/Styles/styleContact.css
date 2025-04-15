@@ -1,0 +1,19 @@
+.sectionSizeContact {
+    width: 40rem;
+    height: auto;
+}
+.sectionSizeMap {
+    width: 30rem;
+    height: auto;
+}
+.textareaSize {
+    resize: none;
+}
+.disabled {
+    display: none;
+}
+.redes i{
+    font-size: 2rem;
+    margin: 0 1rem;
+    color: #000;
+}

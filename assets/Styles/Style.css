@@ -1,0 +1,12 @@
+.gradient {
+    background: linear-gradient(90deg, #FFFFFF, #211EED);
+}
+.gradientX {
+    background: linear-gradient(90deg, #211EED, #FFFFFF);
+}
+.size {
+    width: 100%;
+}
+.copy {
+    color: lightgray;
+}

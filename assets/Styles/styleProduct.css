@@ -1,0 +1,27 @@
+.cardSize {
+    width: 24rem;
+    height: auto;
+    padding: .8rem;
+}
+.cardSize:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+    cursor: pointer;
+}
+.category:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+    cursor: pointer;
+}
+.category {
+    max-width: 150px;
+    height: 160px;
+}
+.categorySection{
+    background-color: lightgray;
+    height: 7.8rem;
+}
+.imgSize {
+    width: 24rem;
+    height: 11rem;
+}

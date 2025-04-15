@@ -4,8 +4,8 @@
     padding: .8rem;
 }
 .cardSize:hover {
-    transform: scale(1.05);
-    transition: 0.3s;
+    transform: scale(1.02);
+    transition: 0.3s all ease-in-out;
     cursor: pointer;
 }
 .category:hover {

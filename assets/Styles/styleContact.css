@@ -1,3 +1,4 @@
+@import url('../animations/animations.css');
 .sectionSizeContact {
     width: 40rem;
     height: auto;
@@ -16,4 +17,13 @@
     font-size: 2rem;
     margin: 0 1rem;
     color: #000;
+}
+#contactoColapsar div input::placeholder {
+    opacity: 0.5;
+}
+.slide-down {
+    animation: slideDown 0.5s ease-out forwards;
+}
+.slide-Up {
+    animation: slideUp 0.5s ease-out forwards;
 }

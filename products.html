@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucho's e_commerce | Productos</title>
-    <link rel="stylesheet" href="assets/Styles/StyleProduct.css">
     <link rel="stylesheet" href="assets/Styles/Style.css">
+    <link rel="stylesheet" href="assets/Styles/styleProduct.css">
     <link rel="icon" type="image/x-icon" href="assets/Images/favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous" type="module"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script type="module" src="./controllers/productControllers.js" defer></script>
 </head>
 <body>
     <header class="d-flex justify-content-between align-items-center p-3 gradient">
@@ -26,110 +27,28 @@
     </header>
     <main class="container-fluid">
         <section class="d-flex justify-content-center align-items-center flex-row p-5 categorySection">
-            <div class="d-flex flex-column justify-content-center align-items-center category pe-5">
+            <div class="d-flex flex-column justify-content-center align-items-center category pe-5" id="perros">
                 <img src="assets/Images/Icon_dog.png" alt="Categoria perro" class="img-fluid" width="150" height="150">
                 <span class="fw-bold">Perros</span>
             </div>
-            <div class="d-flex flex-column justify-content-center align-items-center category pe-5">
+            <div class="d-flex flex-column justify-content-center align-items-center category pe-5" id="gatos">
                 <img src="assets/Images/Icon_cat.png" alt="Categoria perro" class="img-fluid" width="150" height="150">
                 <span class="fw-bold">Gatos</span>
             </div>
-            <div class="d-flex flex-column justify-content-center align-items-center category pe-5">
+            <div class="d-flex flex-column justify-content-center align-items-center category pe-5" id="aves">
                 <img src="assets/Images/Icon_birds.png" alt="Categoria perro" class="img-fluid" width="150" height="150">
                 <span class="fw-bold">Aves</span>
             </div>
-            <div class="d-flex flex-column justify-content-center align-items-center category pe-5">
+            <div class="d-flex flex-column justify-content-center align-items-center category pe-5" id="peces">
                 <img src="assets/Images/Icon_fish.png" alt="Categoria perro" class="img-fluid" width="150" height="150">
                 <span class="fw-bold">Peces</span>
             </div>
+            <div class="d-flex flex-column justify-content-center align-items-center  pe-5 text-center disabled" id="eliminarFiltro">
+                <button class="btn btn-primary disabled">Eliminar filtro <i class="bi bi-filter"></i></button>
+            </div>
         </section>
-        <section class="d-flex flex-row justify-content-center align-items-center flex-wrap py-4" >
-            <div class="d-flex justify-content-center align-items-center cardSize border border-1 border-secondary rounded-3 my-1 mx-1" >
-                <div >
-                    <img src="assets/Images/eatBirds1.png" alt="Comida para aves" class="img-fluid my-2 rounded-3 px-2 imgSize"/>
-                </div>
-                <div class="d-flex flex-column justify-content-center align-items-center">
-                    <span class="py-1" >CUNIPIC Alimento para Agaporni, 3 kg</span>
-                    <span class="py-2" >$250.00</span>
-                    <div class="d-flex justify-content-between align-items-center flex-row w-100">
-                        <button  class="btn btn-outline-primary w-50 textSize me-1">Añadir</button>
-                        <a href="./productDetail.html" class="btn btn-outline-secondary text-decoration-none w-50 textSize align-items-center">Detalle<i class="bi bi-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="d-flex justify-content-center align-items-center cardSize border border-2 border-dark rounded-3 my-1 mx-1" >
-                <div >
-                    <img src="assets/Images/eatBirds1.png" alt="Comida para aves" class="img-fluid my-2 rounded-3 px-2 imgSize"/>
-                </div>
-                <div class="d-flex flex-column justify-content-center align-items-center">
-                    <span class="py-1" >CUNIPIC Alimento para Agaporni, 3 kg</span>
-                    <span class="py-2" >$250.00</span>
-                    <button  class="btn btn-outline-primary w-150">Añadir al carrito</button>
-                </div>
-                <div>
-                    <i class="bi bi-arrow-right"></i>
-                </div>
-            </div>
-            <div class="d-flex justify-content-center align-items-center cardSize border border-2 border-dark rounded-3 my-1 mx-1" >
-                <div >
-                    <img src="assets/Images/eatBirds1.png" alt="Comida para aves" class="img-fluid my-2 rounded-3 px-2 imgSize"/>
-                </div>
-                <div class="d-flex flex-column justify-content-center align-items-center">
-                    <span class="py-1" >CUNIPIC Alimento para Agaporni, 3 kg</span>
-                    <span class="py-2" >$250.00</span>
-                    <button  class="btn btn-outline-primary w-150">Añadir al carrito</button>
-                </div>
-            </div>
-            <div class="d-flex justify-content-center align-items-center cardSize border border-2 border-dark rounded-3 my-1 mx-1" >
-                <div >
-                    <img src="assets/Images/eatBirds1.png" alt="Comida para aves" class="img-fluid my-2 rounded-3 px-2 imgSize"/>
-                </div>
-                <div class="d-flex flex-column justify-content-center align-items-center">
-                    <span class="py-1" >CUNIPIC Alimento para Agaporni, 3 kg</span>
-                    <span class="py-2" >$250.00</span>
-                    <button  class="btn btn-outline-primary w-150">Añadir al carrito</button>
-                </div>
-            </div>
-            <div class="d-flex justify-content-center align-items-center cardSize border border-2 border-dark rounded-3 my-1 mx-1" >
-                <div >
-                    <img src="assets/Images/eatBirds1.png" alt="Comida para aves" class="img-fluid my-2 rounded-3 px-2 imgSize"/>
-                </div>
-                <div class="d-flex flex-column justify-content-center align-items-center">
-                    <span class="py-1" >CUNIPIC Alimento para Agaporni, 3 kg</span>
-                    <span class="py-2" >$250.00</span>
-                    <button  class="btn btn-outline-primary w-150">Añadir al carrito</button>
-                </div>
-            </div>
-            <div class="d-flex justify-content-center align-items-center cardSize border border-2 border-dark rounded-3 my-1 mx-1" >
-                <div >
-                    <img src="assets/Images/eatBirds1.png" alt="Comida para aves" class="img-fluid my-2 rounded-3 px-2 imgSize"/>
-                </div>
-                <div class="d-flex flex-column justify-content-center align-items-center">
-                    <span class="py-1" >Cunipic Alimento para Agaporni, 3 kg</span>
-                    <span class="py-2" >$250.00</span>
-                    <button  class="btn btn-outline-primary w-150">Añadir al carrito</button>
-                </div>
-            </div>
-            <div class="d-flex justify-content-center align-items-center cardSize border border-2 border-dark rounded-3 my-1 mx-1" >
-                <div >
-                    <img src="assets/Images/eatBirds1.png" alt="Comida para aves" class="img-fluid my-2 rounded-3 px-2 imgSize"/>
-                </div>
-                <div class="d-flex flex-column justify-content-center align-items-center">
-                    <span class="py-1" >CUNIPIC Alimento para Agaporni, 3 kg</span>
-                    <span class="py-2" >$250.00</span>
-                    <button  class="btn btn-outline-primary w-150">Añadir al carrito</button>
-                </div>
-            </div>
-            <div class="d-flex justify-content-center align-items-center cardSize border border-2 border-dark rounded-3 my-1 mx-1" >
-                <div >
-                    <img src="assets/Images/eatBirds1.png" alt="Comida para aves" class="img-fluid my-2 rounded-3 px-2 imgSize"/>
-                </div>
-                <div class="d-flex flex-column justify-content-center align-items-center">
-                    <span class="py-1" >CUNIPIC Alimento para Agaporni, 3 kg</span>
-                    <span class="py-2" >$250.00</span>
-                    <button  class="btn btn-outline-primary w-150">Añadir al carrito</button>
-                </div>
-            </div>
+        <section class="d-flex flex-row justify-content-center align-items-center flex-wrap py-4" id="seccionProductos" >
+            <!-- Los productos se cargan desde productControllers.js-->
         </section>
     </main>
     <footer  class="d-flex justify-content-between align-items-center p-3 gradient flex-column " >

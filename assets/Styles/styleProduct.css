@@ -22,10 +22,21 @@
     height: 7.8rem;
 }
 .imgSize {
-    width: 150px;
-    height: 150px;
+    width: auto !important;
+    height: 150px   !important;
 }
 .textSize {
-    font-size: .5rem;
-    font-weight: 600;
+    font-size: .4rem;
+}
+.disabled {
+    pointer-events: none;
+    opacity: 0;
+    cursor: not-allowed;
+    display: none;
+}
+.active {
+    pointer-events: auto;
+    opacity: 1;
+    cursor: pointer;
+    display: block;
 }

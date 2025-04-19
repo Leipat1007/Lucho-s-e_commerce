@@ -4,6 +4,7 @@
 }
 .sectionSizeFactura {
     width: 30rem;
+    height: auto;
 }
 .cardSize {
     width: 80% !important;

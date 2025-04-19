@@ -65,8 +65,8 @@
         },
         {
             "id": 8,
-            "nombre":"Alimento Húmedo Para Gato Royal Canin Fhn Spayed Neuter - 85 Gr",
-            "precio": 200.00,
+            "nombre":"Alimento Húmedo Para Gato - 85 Gr",
+            "precio": 200.25,
             "descripcion": "Alimento completo para gatos adultos, con un 40% de carne y un 60% de grano.",
             "image": "assets/Images/eatCat3.png",
             "categoria": "Gatos",

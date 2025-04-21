@@ -1,6 +1,7 @@
-import { productService } from '../services/productService.js';
+import { productService } from '../services/productService.js'; // Importo el servicio de productos
+// Obtengo el contenedor de los productos
 const seccionProductos = document.getElementById('seccionProductos');
-const eliminarFiltroBtn = document.getElementById('eliminarFiltro');
+const eliminarFiltroBtn = document.getElementById('eliminarFiltro'); // Obtengo el botón de eliminar filtro
 // Función para crear una tarjeta de producto
 const cardsContainer = (image, nombre, precio, stock, id) => {
     const card = document.createElement('div');
@@ -11,7 +12,7 @@ const cardsContainer = (image, nombre, precio, stock, id) => {
         </div>
         <div class="d-flex flex-column justify-content-center align-items-center">
             <span class="py-1">${nombre}</span>
-            <span class="py-2">$${precio}</span>
+            <span class="py-2">$${precio.toFixed(2)}</span>
             <div class="d-flex justify-content-between align-items-center flex-row w-100">
                 <button class="btn btn-outline-primary w-50 textSize me-1 add-cart" 
                 data-id='${id}'
@@ -24,7 +25,7 @@ const cardsContainer = (image, nombre, precio, stock, id) => {
                 <a href="./productDetail.html?id=${id}" class="btn btn-outline-secondary text-decoration-none w-50 textSize align-items-center">Detalle<i class="bi bi-arrow-right"></i></a>
             </div>
         </div>`;
-    return card;
+    return card; // Devuelvo la tarjeta del producto
 };
 //Función para guardar el id del producto en el localStorage
 const addCart = (producto) => {
@@ -41,7 +42,6 @@ const addCart = (producto) => {
         alert('El producto ya está en el carrito');
     }
 };
-
 // Función para renderizar productos
 const render = (categoria = null) => {
     productService.producto().then((pro) => {
@@ -59,17 +59,16 @@ const render = (categoria = null) => {
                 eliminarFiltroBtn.classList.add('disabled'); // Agregar clase de estilo deshabilitado
                 eliminarFiltroBtn.classList.remove('active'); // Quitar clase de estilo activo
             }
-            // Iterar sobre los productos filtrados y crear tarjetas
-            // de productos para cada uno
+            // Iterar sobre los productos filtrados y crear tarjetas de productos para cada uno
             productoFiltro.forEach(({ image, nombre, precio, stock, id }) => {
                 const card = cardsContainer(image, nombre, precio, stock, id);
                 seccionProductos.appendChild(card);
             });
             //Defino el boton de agregar al carrito
             const addCartButtons = document.querySelectorAll('.add-cart');
-            //Itero sobre los botones de agregar al carrito
-            // y les agrego el evento click
+            //Itero sobre los botones de agregar al carrito y les agrego el evento click
             addCartButtons.forEach((button) => {
+                // Agrego el evento al botón de agregar al carrito
                 button.addEventListener('click', (e) => {
                     // Prevenir el comportamiento por defecto del botón
                     e.preventDefault();

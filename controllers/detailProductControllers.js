@@ -1,6 +1,6 @@
-import { productService } from '../services/productService.js';
-const detailProductCard = document.getElementById('detailProductCard');
-const productCard = (image, nombre, precio, descripcion, id) => {
+import { productService } from '../services/productService.js'; // Importo el servicio de productos
+const detailProductCard = document.getElementById('detailProductCard'); // Obtengo el contenedor del producto
+const productCard = (image, nombre, precio, descripcion, id) => { // Función para crear la tarjeta del producto
     const card = document.createElement('div');
     card.classList.add('row', 'mt-5', 'mb-5');
     const cardBody = ` <div class="col-md-6">
@@ -9,14 +9,14 @@ const productCard = (image, nombre, precio, descripcion, id) => {
                                     <div class="col-md-6">
                                         <h1 class="fw-bold">${nombre}</h1>
                                         <p class="mt-3">${descripcion}</p>
-                                        <h2 class="mt-4">$${precio}</h2>
+                                        <h2 class="mt-4">$${precio.toFixed(2)}</h2>
                                         <button type="button" class="btn btn-primary mt-3 me-5 addCart" data-id=${id}>Agregar al carrito</button>
                                         <a href="./products.html" class="btn btn-secondary mt-3">Volver</a>
                                     </div>`
     card.innerHTML = cardBody;
-    return card;
+    return card; // Devuelvo la tarjeta del producto
 };
-//Función para guardar el id del producto en el localStorage
+//Función para guardar la información del producto en el localStorage
 const addCart = (producto) => {
     // Obtener el carrito del localStorage o inicializarlo como un array vacío
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
@@ -32,7 +32,8 @@ const addCart = (producto) => {
         alert('El producto ya está en el carrito');
     }
 };
-document.addEventListener('DOMContentLoaded', async () => {
+document.addEventListener('DOMContentLoaded', async () => { // Espera a que el DOM esté completamente cargado
+    // Obtengo el id del producto de la URL
     const info = () => {
         const url = new URL(window.location);
         const id = url.searchParams.get('id');

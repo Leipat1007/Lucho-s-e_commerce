@@ -50,15 +50,6 @@ const render = (categoria = null) => {
             // Filtrar productos por categoría si se proporciona
             // Si no se proporciona categoría, se mostrarán todos los productos
             const productoFiltro = categoria ? pro.filter((producto) => producto.categoria === categoria) : pro;
-            if (categoria) {
-                eliminarFiltroBtn.disabled = false; // Habilitar el botón
-                eliminarFiltroBtn.classList.remove('disabled'); // Quitar clase de estilo deshabilitado
-                eliminarFiltroBtn.classList.add('active'); // Agregar clase de estilo activo
-            } else {
-                eliminarFiltroBtn.disabled = true; // Deshabilitar el botón
-                eliminarFiltroBtn.classList.add('disabled'); // Agregar clase de estilo deshabilitado
-                eliminarFiltroBtn.classList.remove('active'); // Quitar clase de estilo activo
-            }
             // Iterar sobre los productos filtrados y crear tarjetas de productos para cada uno
             productoFiltro.forEach(({ image, nombre, precio, stock, id }) => {
                 const card = cardsContainer(image, nombre, precio, stock, id);
@@ -99,5 +90,5 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('gatos').addEventListener('click', () => { render('Gatos') });
     document.getElementById('aves').addEventListener('click', () => { render('Aves') });
     document.getElementById('peces').addEventListener('click', () => { render('Peces') });
-    eliminarFiltroBtn.addEventListener('click', () => { render() });
+    document.getElementById('All').addEventListener('click', () => { render() });
 });

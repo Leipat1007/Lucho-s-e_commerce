@@ -28,12 +28,6 @@
 .textSize {
     font-size: .4rem;
 }
-.disabled {
-    pointer-events: none;
-    opacity: 0;
-    cursor: not-allowed;
-    display: none;
-}
 .active {
     pointer-events: auto;
     opacity: 1;

@@ -11,6 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous" type="module"></script>
     <script type="module" src="controllers/cartControllers.js" defer></script>
+    <script type="module" src="assets/Js/cartComprar.js" defer></script>
 </head>
 <body>
     <header class="d-flex justify-content-between align-items-center p-3 gradient">
@@ -27,8 +28,28 @@
     </header>
     <main>
         <div class="d-flex justify-content-left align-items-left flex-column p-5 fw-bold fs-4  flex-wrap">
-            <span>Tu carrito de compras</span>
-            <span>Número de pedido: XXXXX</span>
+            <span>Hola! Luch@</span>
+            <span>Este es tu carrito de compras</span>
+            <span>Número de pedido: 123456</span>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="dynamicModal" tabindex="-1" aria-labelledby="dynamicModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="dynamicModalLabel">Procesando factura #123456</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div id="loading" class="d-flex justify-content-center align-items-center">
+                    <div class="spinner-border text-primary align-items-center my-5" role="status">
+                    </div>
+                  </div>
+                <div class="modal-body" id="modalBody">
+                <!-- Aquí se mostrará el texto dinámico -->
+                </div>
+            </div>
+            </div>
+        </div>
         </div>
         <div class="d-flex justify-content-between flex-row px-4 py-4" >
             <section class="sectionSize border border-black rounded-3 px-2" id="cartContainer">
@@ -52,7 +73,7 @@
                     </article>
                 </div>
                 <span class="fw-bold text-secondary fst-italic">Los precios incluyen IVA</span>
-                <button class="my-5 btn btn-primary">Comprar ahora</button>
+                <button class="my-5 btn btn-primary" id="BtnComprar" data-bs-toggle="modal" data-bs-target="#dynamicModal">Comprar ahora</button>
             </section>
         </div>
     </main>

@@ -1,4 +1,4 @@
-const API_URL = 'https://raw.githubusercontent.com/Leipat1007/Lucho-s-e_commerce/refs/heads/main/bd.json'; // Reemplaza con la URL de tu API
+const API_URL = 'https://leipat1007.github.io/Lucho-s-bd/bd.json'; // Reemplaza con la URL de tu API
 export const productService = {
     // Función para obtener productos
     producto: async () => {

@@ -1,0 +1,17 @@
+@media screen and (max-width: 900px) {
+    .content {
+        flex-direction: column;
+    }
+    .content .sectionSize {
+        width: 100% !important;
+        margin-bottom: 1rem;
+    }
+    .content .sectionSize div {
+        width: 95%;
+        height: auto;
+    }
+    .content .sectionSizeFactura {
+        width: 100% !important;
+        margin-bottom: 1rem;
+    }
+}

@@ -1,0 +1,9 @@
+.category img {
+    max-width: 100%;
+    height: auto;
+}
+@media (max-width: 768px) {
+    .categorySection {
+        padding: 2rem 1rem;
+    }
+}

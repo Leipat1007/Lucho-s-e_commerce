@@ -1,0 +1,13 @@
+@media (max-width: 768px) {
+    .gradient {
+        text-align: center;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    footer .row {
+        flex-direction: column;
+    }
+}

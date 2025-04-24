@@ -21,7 +21,7 @@ export const crearCarrito = (image, nombre, stock, precio, id, cantidad) => {
   // Crear el contenedor del carrito de compras
   const cartContainer = document.getElementById("cartContainer"); // Obtener el contenedor del carrito de compras
   const cartCard = document.createElement("div");
-  cartCard.classList.add("card","my-2","border","border-secondary","d-flex","justify-content-between","flex-row","px-5","rounded-3","cardSize","m-3"); // Agregar clases al contenedor de la tarjeta del carrito
+  cartCard.classList.add("card","my-2","border","border-secondary","d-flex","justify-content-between","flex-row","px-2","rounded-3","cardSize","m-3"); // Agregar clases al contenedor de la tarjeta del carrito
   cartCard.setAttribute("id", `cart-item-${id}`); // Asignar un identificador único a la tarjeta del carrito
   cartCard.innerHTML = `<div class="my-2">
                                            <button class="btn btn-danger eliminarProducto" data-id='${id}'><i class="bi bi-x-lg"></i></button>

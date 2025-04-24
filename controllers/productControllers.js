@@ -1,4 +1,4 @@
-import { productService } from '../Services/productService.js'; // Importo el servicio de productos
+import { productService } from './Services/productService.js'; // Importo el servicio de productos
 // Obtengo el contenedor de los productos
 const seccionProductos = document.getElementById('seccionProductos');
 const eliminarFiltroBtn = document.getElementById('eliminarFiltro'); // Obtengo el botón de eliminar filtro

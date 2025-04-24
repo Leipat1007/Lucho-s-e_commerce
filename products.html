@@ -14,61 +14,107 @@
 </head>
 <body>
     <header class="d-flex justify-content-between align-items-center p-3 gradient">
-        <img src="assets/Images/Logo.png" alt="Logo tienda de mascotas" class="img-fluid" width="80px" height=" 80px">
-        <span style="font-size: 2.5rem;">Luch@'s tienda de mascotas</span>
+        <img src="assets/Images/Logo.png" alt="Logo tienda de mascotas" class="img-fluid" width="80px" height="80px">
+        <span class="title">Luch@'s Store</span>
         <nav class="navbar navbar-expand-lg bg-transparent">
-            <ul class="navbar-nav me-2 mb-2 mb-lg-0">
-                <li class="me-2 btn btn-link text-decoration-none"><a href="./index.html" class="text-white fw-bold text-decoration-none">Inicio</a></li>
-                <li class="me-2 btn btn-link text-decoration-none"><a href="./products.html" class="text-white fw-bold text-decoration-none">Productos</a></li>
-                <li class="me-2 btn btn-link text-decoration-none"><a href="./cart.html" class="text-white fw-bold text-decoration-none">Carrito</a></li>
-                <li class="me-2 btn btn-link text-decoration-none"><a href="./contact.html" class="text-white fw-bold text-decoration-none">¿Quienes somos?</a></li>
-            </ul>
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="./index.html" class="nav-link text-white fw-bold">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./products.html" class="nav-link text-white fw-bold">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./cart.html" class="nav-link text-white fw-bold">Carrito</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./contact.html" class="nav-link text-white fw-bold">¿Quienes somos?</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main class="container-fluid">
-        <section class="d-flex justify-content-center align-items-center flex-row p-5 categorySection">
-            <div class="d-flex flex-column justify-content-center align-items-center category pe-5" id="perros">
-                <img src="assets/Images/Icon_dog.png" alt="Categoria perro" class="img-fluid" width="150" height="150">
-                <span class="fw-bold">Perros</span>
+        <section class="justify-content-center align-items-center text-center p-5 categorySection d-flex flex-wrap" id="seccionCategorias">
+            <div class="col-6 col-md-3 col-lg-2 mb-4">
+                <div class="d-flex flex-column justify-content-center align-items-center category" id="perros">
+                    <img src="assets/Images/Icon_dog.png" alt="Categoria perro" class="img-fluid" style="max-width: 100px;">
+                    <span class="fw-bold">Perros</span>
+                </div>
             </div>
-            <div class="d-flex flex-column justify-content-center align-items-center category pe-5" id="gatos">
-                <img src="assets/Images/Icon_cat.png" alt="Categoria gato" class="img-fluid" width="150" height="150">
-                <span class="fw-bold">Gatos</span>
+            <div class="col-6 col-md-3 col-lg-2 mb-4">
+                <div class="d-flex flex-column justify-content-center align-items-center category" id="gatos">
+                    <img src="assets/Images/Icon_cat.png" alt="Categoria gato" class="img-fluid" style="max-width: 100px;">
+                    <span class="fw-bold">Gatos</span>
+                </div>
             </div>
-            <div class="d-flex flex-column justify-content-center align-items-center category pe-5" id="aves">
-                <img src="assets/Images/Icon_birds.png" alt="Categoria aves" class="img-fluid" width="150" height="150">
-                <span class="fw-bold">Aves</span>
+            <div class="col-6 col-md-3 col-lg-2 mb-4">
+                <div class="d-flex flex-column justify-content-center align-items-center category" id="aves">
+                    <img src="assets/Images/Icon_birds.png" alt="Categoria aves" class="img-fluid" style="max-width: 100px;">
+                    <span class="fw-bold">Aves</span>
+                </div>
             </div>
-            <div class="d-flex flex-column justify-content-center align-items-center category pe-5" id="peces">
-                <img src="assets/Images/Icon_fish.png" alt="Categoria peces" class="img-fluid" width="150" height="150">
-                <span class="fw-bold">Peces</span>
+            <div class="col-6 col-md-3 col-lg-2 mb-4">
+                <div class="d-flex flex-column justify-content-center align-items-center category" id="peces">
+                    <img src="assets/Images/Icon_fish.png" alt="Categoria peces" class="img-fluid" style="max-width: 100px;">
+                    <span class="fw-bold">Peces</span>
+                </div>
             </div>
-            <div class="d-flex flex-column justify-content-center align-items-center category pe-5" id="All">
-                <img src="assets/Images/animals.png" alt="Categoria todos" class="img-fluid rounded-5" width="150" height="150">
-                <span class="fw-bold">Todos</span>
+            <div class="col-12 col-md-3 col-lg-2 mb-4">
+                <div class="d-flex flex-column justify-content-center align-items-center category" id="All">
+                    <img src="assets/Images/animals.png" alt="Categoria todos" class="img-fluid rounded-5" style="max-width: 100px;">
+                    <span class="fw-bold">Todos</span>
+                </div>
             </div>
         </section>
         <section class="d-flex flex-row justify-content-center align-items-center flex-wrap py-4" id="seccionProductos" >
             <!-- Los productos se cargan desde productControllers.js-->
         </section>
     </main>
-    <footer  class="d-flex justify-content-between align-items-center p-3 gradient flex-column " >
-        <div class="d-flex justify-content-between align-items-center flex-row w-100">    
-            <nav class="navbar navbar-expand-lg bg-transparent">
-                <ul class="navbar-nav me-2 mb-2 mb-lg-0">
-                    <li class="me-2 btn btn-link text-decoration-none"><a href="./index.html" class="text-black fw-bold text-decoration-none">Inicio</a></li>
-                    <li class="me-2 btn btn-link text-decoration-none"><a href="./products.html" class="text-black fw-bold text-decoration-none">Productos</a></li>
-                    <li class="me-2 btn btn-link text-decoration-none"><a href="./cart.html" class="text-black fw-bold text-decoration-none">Carrito</a></li>
-                    <li class="me-2 btn btn-link text-decoration-none"><a href="./contact.html" class="text-black fw-bold text-decoration-none">¿Quienes somos?</a></li>
-                </ul>
-            </nav>
-            <section class="d-flex justify-content-center align-items-center ">
-                <a href="#" class="p-4"><img src="assets/Images/logo-white.png" alt="Logo X" width="30" height="30"></a>
-                <a href="#" class="p-4"><img src="assets/Images/Instagram_Glyph_Gradient.svg" alt="Logo Instagram" width="30" height="30"></a>
-                <a href="#" class="p-4"><img src="assets/Images/Facebook_Logo_Primary.png" alt="Logo facebook" width="30" height="30"></a>
-            </section>
+    <footer class="container-fluid p-3 gradient">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <nav class="navbar navbar-expand-lg bg-transparent">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavF" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavF">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a href="./index.html" class="nav-link text-dark fw-bold">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./products.html" class="nav-link text-dark fw-bold">Productos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./cart.html" class="nav-link text-dark fw-bold">Carrito</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./contact.html" class="nav-link text-dark fw-bold">¿Quienes somos?</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-12 col-md-6 text-center">
+                <a href="#" class="p-2"><img src="assets/Images/logo-white.png" alt="Logo X" width="30" height="30"></a>
+                <a href="#" class="p-2"><img src="assets/Images/Instagram_Glyph_Gradient.svg" alt="Logo Instagram" width="30" height="30"></a>
+                <a href="#" class="p-2"><img src="assets/Images/Facebook_Logo_Primary.png" alt="Logo Facebook" width="30" height="30"></a>
+            </div>
         </div>
-        <span class="my-3 fw-semibold copy">Copyright &copy; Tienda de mascotas | Diseñado y desarrollado Luch@'s Company</span>
+        <div class="row">
+            <div class="col-12 text-center">
+                <span class="my-3 fw-semibold copy">Copyright &copy; Tienda de mascotas | Diseñado y desarrollado Luch@'s Company</span>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

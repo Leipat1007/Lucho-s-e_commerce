@@ -19,7 +19,7 @@
 }
 .categorySection{
     background-color: lightgray;
-    height: 7.8rem;
+    height: auto;
 }
 .imgSize {
     width: auto !important;

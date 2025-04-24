@@ -2,12 +2,16 @@
     width: 50rem;
     height: auto;
 }
+.sectionSize div {
+    width: 95%;
+    height: auto;
+}
 .sectionSizeFactura {
     width: 30rem;
     height: auto;
 }
 .cardSize {
-    width: 80% !important;
+    width: 80%;
     height: 30rem;
 }
 .imgSize {

@@ -17,3 +17,12 @@
         width: 100%;
     }
 }
+@media (max-width: 768px) {
+    footer .row {
+        text-align: center;
+    }
+
+    footer .navbar-nav {
+        justify-content: center;
+    }
+}

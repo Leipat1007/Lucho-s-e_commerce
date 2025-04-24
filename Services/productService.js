@@ -1,8 +1,9 @@
+const API_URL = 'https://raw.githubusercontent.com/Leipat1007/Lucho-s-e_commerce/refs/heads/main/bd.json'; // Reemplaza con la URL de tu API
 export const productService = {
     // Función para obtener productos
     producto: async () => {
         try {
-            const response = await fetch('./bd.json');
+            const response = await fetch(API_URL);
             if (!response.ok) {
                 throw new Error('Error en la respuesta de la API');
             }
@@ -16,7 +17,7 @@ export const productService = {
     // Función para obtener un producto por ID
     productoId: async (id) => {
         try {
-            const response = await fetch('./bd.json'); 
+            const response = await fetch(API_URL); 
             if (!response.ok) {
                 throw new Error('Error en la respuesta de la API');
             }
